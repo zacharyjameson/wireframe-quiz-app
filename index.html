@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lord of the Rings Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>Question: <span class="questionNumber">0</span>/10</li>
+        <li>Score: <span class="score">0</span></li>
+      </ul>
+    </header>
+    <main>
+      <div class="startQuiz">
+        <h1>The Not By Any Means Complete or Exhaustive Quiz On Middle Earth</h1>
+        <h2>Click the button below when you're ready for an adventure</h2>
+        <button type="button" class="startButton">I'm going on an adventure!</button>
+      </div>
+      <div class="questionAnswerForm">
+      </div>
+    <div class="questionForm">
+      <div class="question">
+        <label>Where was Gondor when the Westfold fell?</label><br>
+      </div>
+      <div class="possibleAnswers">
+          <input type="radio" id ="answer1" value="Osgiliath" name="answer" required>
+        <label for="answer1">Osgiliath</label><br>
+          <input type="radio" id ="answer2" value="Ravenhill" name="answer">
+        <label for="answer2">Ravenhill</label><br>
+          <input type="radio" id="answer3" value="Dunland" name="answer">
+        <label for="answer3">Dunland</label><br>
+          <input type="radio" id="answer4" value="Angmar" name="answer">
+        <label for="answer4">Angmar</label>
+      </div>
+      <div class="submitAnswer">
+        <button type="submit" id="submit-answer-button">Submit</button>
+      </div>
+    </div>
+
+    </main>
+  </body>
+</html>
